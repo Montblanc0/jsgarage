@@ -6,7 +6,7 @@ It features a parking lot organizer with 9 available slots to be filled by user-
 
 ![JS Garage](https://i.ibb.co/dfjNJZn/JSGARAGE.jpg "JS Garage")
 
-##Page structure from top to bottom
+## Page structure from top to bottom
 
 - A counter for available slots;
 - A form to enter a car by brand, model, registration number and motor fuel;

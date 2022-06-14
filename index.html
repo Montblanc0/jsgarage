@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Garage</title>
+    <link rel="stylesheet" href="css/index.css">
+    <script type="module" src="script/index.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h2>JS Garage</h2>
+    </header>
+    <div id="wrapper">
+        <div id="formContainer">
+            <form action="" id="carForm" name="carForm">
+                <h3>Metti un'auto in Garage</h3>
+                <h4>Posti ancora liberi: <span id="liberi"></span></h4>
+                <label for="marca">Marca</label>
+                <input type="text" name="marca" id="marca" placeholder="Inserisci la marca" required>
+                <label for="modello">Modello</label>
+                <input type="text" name="modello" id="modello" placeholder="Inserisci il modello" required>
+                <label for="targa">Targa</label>
+                <input type="text" name="targa" id="targa" placeholder="Inserisci la targa" required>
+                <label for="tipo">Tipo</label>
+                <select name="tipo">
+                    <option value="Benzina">Benzina</option>
+                    <option value ="Diesel">Diesel</option>
+                    <option value ="GPL">GPL</option>
+                    <option value ="Ibrida">Ibrida</option>
+                    <option value="Elettrica">Elettrica</option>
+                </select>
+                <br>
+                <button id="parcheggia">Parcheggia</button>
+            </form>
+            <span><p class="message" id="bacheca"></p></span>
+        </div>
+        <div id="controlloMarca">
+            <h3>Controlla quante macchine della stessa marca sono in garage</h3>
+            <form action="" id="marcaForm" name="marcaForm">
+                <input type="text" name="testoMarca" id="testoMarca" placeholder="Inserisci una marca" required>
+                <br>
+                <button id="controlla">Controlla</button>
+            </form>
+            <span><p class="message" id="risultato">Inserisci una marca per iniziare la ricerca</p></span>
+
+        </div>
+        <div id="tableWrapper">
+            <div id="tableContainer">
+                <table border=1>
+                    <thead>
+                        <h3>Macchine nel garage: <span id="quante"></span></h3>
+                        <tr>
+                            <th>Marca</th>
+                            <th>Modello</th>
+                            <th>Targa</th>
+                            <th>Tipo</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+            <button id="svuota">Svuota garage</button>
+            <button id="riempi">Riempi automaticamente</button>
+        </div>
+    </div>
+</body>
+
+</html>
